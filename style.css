@@ -214,6 +214,7 @@ section {
 
 .headers_div {
   display: flex;
+  margin-top: 4rem;
 }
 
 .experience_header_text,
@@ -240,6 +241,7 @@ section {
 .experiencenworks_div {
   display: flex;
   gap: 2.5rem;
+  margin-top: -4.5rem;
 }
 
 .experience_div {
