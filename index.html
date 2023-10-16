@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>Hi</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="mediaqueries.css" />
+</head>
+
+<body>
+  <nav id="navigator" class="navigator">
+    <div>
+      <ul class="nav_links">
+        <li>
+          <a class="nav_item" href="#about">ABOUT</a>
+        </li>
+        <li>
+          <a class="nav_item" href="#experiencenworks">EXPERIENCE & WORKS</a>
+        </li>
+        <li>
+          <a class="nav_item" href="#contact">CONTACT</a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+  <nav id="hamburger_nav">
+    <div class="hamburger_menu">
+      <div class="hamburger_icon" onclick="toggleMenu()">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+      <div class="menu_links">
+        <li>
+          <a class="nav_item" href="#about" onclick="toggleMenu()">ABOUT</a>
+        </li>
+        <li>
+          <a class="nav_item" href="#experiencenworks" onclick="toggleMenu()">EXPERIENCE & WORKS</a>
+        </li>
+        <li>
+          <a class="nav_item" href="#contact" onclick="toggleMenu()">CONTACT</a>
+        </li>
+      </div>
+    </div>
+  </nav>
+  <section id="about">
+    <div class="about_div">
+      <p class="about_text">
+        HI , I'M
+      <h1>OSMAN KEREM ERDEM</h1><br>LONG STORY SHORT , I LOVE TO DEVELOP
+      AND MAINTAIN SOFTWARE WORKS AND I'M HARMONIOUS WITH PEOPLE ..<br>
+      USUALLY ..<br><br>
+      </p>
+      <div class="btn_container">
+        <input type="button" class="cv_btn" value="RESUME" onclick="window.open('./assets/resume-example.pdf')">
+        <input type="button" class="contact_btn" value="CONTACT" onclick="location.href='./#contact'">
+      </div>
+      <div class="socials_container">
+        <img src="./assets/linkedin.png" alt="linkedin profile" class="icon icon_social"
+          onclick="location.href='https://www.linkedin.com/in/okerdem13/'">
+        <img src="./assets/github.png" alt="github profile" class="icon icon_social"
+          onclick="location.href='https://github.com/okerdem/'">
+      </div>
+    </div>
+    <img src="./assets/down_arrow.png" alt="down arrow" class="icon down_arrow"
+      onclick="location.href='./#experiencenworks'">
+  </section>
+  <section id="experiencenworks">
+    <div class="headers_div">
+      <div class="experience_header_div">
+        <img src="./assets/toolbox.png">
+        <div class="experience_header_text">
+          <p>My</p>
+          <h1>Toolkit</h1>
+        </div>
+      </div>
+      <div class="works_header_div">
+        <img class="works_image" src="./assets/experience.png">
+        <div class="works_header_text">
+          <p>My</p>
+          <h1>Work</h1>
+        </div>
+      </div>
+    </div>
+    <div class="experiencenworks_div">
+      <div class="experience_div">
+        <div class="experience_elements_div">
+          <div class="element_div">
+            <h3>Programming</h3><br>
+            <p>Javascript<br>Dart / Flutter<br>Kotlin<br>Java<br>Html<br>CSS</p>
+          </div>
+          <div class="element_div">
+            <h3>Database</h3><br>
+            <p>SQL</p>
+          </div>
+          <div class="element_div">
+            <h3>Other</h3><br>
+            <p>GitHub<br>Git<br>Figma<br>Nuclino</p>
+          </div>
+        </div>
+      </div>
+      <div class="works_div">
+        <div class="works_container_div">
+          <div class="work_element">
+            <h3>Melanoma Skin Cancer
+              Prediction App</h3>
+            <p>An application that predicts whether a mole on
+              the skin is a skin cancer or not by taking a
+              photo or using saved photos. Developed with
+              Kotlin for application and Python for machine
+              learning.</p>
+            <button class="works_button"
+              onclick="location.href='https://github.com/okerdem/Project_Mole/'">GitHub</button>
+          </div>
+          <div class="work_element">
+            <h3>Portfolio Site</h3>
+            <p>A website that showcases my competency about software engineering. Developed with Html , CSS and
+              Javascript.</p>
+            <button class="works_button"
+              onclick="location.href='https://github.com/okerdem/Project_Mole/'">GitHub</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <img src="./assets/up_arrow.png" alt="up arrow" class="icon up_arrow" onclick="location.href='./#about'">
+    <img src="./assets/down_arrow.png" alt="down arrow" class="icon down_arrow" onclick="location.href='./#contact'">
+  </section>
+  <section id="contact">
+    <div class="contact_div">
+      <h1>Contact Me..</h1>
+      <div class="contact_details">
+        <div class="contact_element">
+          <img class="contact_image mail" src="./assets/email.png">
+          <p><a href="mailto:okerdem.13@gmail.com">Gmail</a> </p>
+        </div>
+        <div class="contact_element">
+          <img class="contact_image github" src="./assets/github.png">
+          <p><a href="https://github.com/okerdem/">GitHub</a> </p>
+        </div>
+        <div class="contact_element">
+          <img class="contact_image linkedin" src="./assets/linkedin.png">
+          <p><a href="https://www.linkedin.com/in/okerdem13/">LinkedIn</a> </p>
+        </div>
+      </div>
+    </div>
+    <img src="./assets/up_arrow.png" alt="up arrow" class="icon up_arrow" onclick="location.href='./#experiencenworks'">
+  </section>
+  <script src="script.js"></script>
+</body>
+
+</html>
