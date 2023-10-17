@@ -8,6 +8,7 @@
 </head>
 
 <body>
+  <img class="theme_image" src="./assets/sun_on.png" onclick="changeTheme(this)">
   <nav id="navigator" class="navigator">
     <div>
       <ul class="nav_links">
@@ -15,7 +16,7 @@
           <a class="nav_item" href="#about">ABOUT</a>
         </li>
         <li>
-          <a class="nav_item" href="#experiencenworks">EXPERIENCE & WORKS</a>
+          <a class="nav_item" href="#experiencenwork">EXPERIENCE & WORK</a>
         </li>
         <li>
           <a class="nav_item" href="#contact">CONTACT</a>
@@ -35,7 +36,7 @@
           <a class="nav_item" href="#about" onclick="toggleMenu()">ABOUT</a>
         </li>
         <li>
-          <a class="nav_item" href="#experiencenworks" onclick="toggleMenu()">EXPERIENCE & WORKS</a>
+          <a class="nav_item" href="#experiencenwork" onclick="toggleMenu()">EXPERIENCE & WORK</a>
         </li>
         <li>
           <a class="nav_item" href="#contact" onclick="toggleMenu()">CONTACT</a>
@@ -62,10 +63,8 @@
           onclick="location.href='https://github.com/okerdem/'">
       </div>
     </div>
-    <img src="./assets/down_arrow.png" alt="down arrow" class="icon down_arrow"
-      onclick="location.href='./#experiencenworks'">
   </section>
-  <section id="experiencenworks">
+  <section id="experiencenwork">
     <div class="headers_div">
       <div class="experience_header_div">
         <img src="./assets/toolbox.png">
@@ -82,16 +81,12 @@
         </div>
       </div>
     </div>
-    <div class="experiencenworks_div">
+    <div class="experiencenwork_div">
       <div class="experience_div">
         <div class="experience_elements_div">
           <div class="element_div">
             <h3>Programming</h3><br>
-            <p>Javascript<br>Dart / Flutter<br>Kotlin<br>Java<br>Html<br>CSS</p>
-          </div>
-          <div class="element_div">
-            <h3>Database</h3><br>
-            <p>SQL</p>
+            <p>Javascript<br>Dart / Flutter<br>Kotlin<br>Java<br>Html<br>CSS<br><br>SQL</p>
           </div>
           <div class="element_div">
             <h3>Other</h3><br>
@@ -106,24 +101,21 @@
               Prediction App</h3>
             <p>An application that predicts whether a mole on
               the skin is a skin cancer or not by taking a
-              photo or using saved photos. Developed with
-              Kotlin for application and Python for machine
-              learning.</p>
-            <button class="works_button"
-              onclick="location.href='https://github.com/okerdem/Project_Mole/'">GitHub</button>
+              photo or using saved photos.</p>
+            <img src="./assets/github.png" alt="github profile" class="icon icon_social"
+              onclick="location.href='https://github.com/okerdem/Project_Mole/'">
           </div>
           <div class="work_element">
             <h3>Portfolio Site</h3>
             <p>A website that showcases my competency about software engineering. Developed with Html , CSS and
               Javascript.</p>
-            <button class="works_button"
-              onclick="location.href='https://github.com/okerdem/Portfolio_Site/'">GitHub</button>
+            <img src="./assets/github.png" alt="github profile" class="icon icon_social"
+              onclick="location.href='https://github.com/okerdem/Portfolio_Site/'">
           </div>
         </div>
       </div>
     </div>
-    <img src="./assets/up_arrow.png" alt="up arrow" class="icon up_arrow" onclick="location.href='./#about'">
-    <img src="./assets/down_arrow.png" alt="down arrow" class="icon down_arrow" onclick="location.href='./#contact'">
+    </div>
   </section>
   <section id="contact">
     <div class="contact_div">
@@ -143,8 +135,12 @@
         </div>
       </div>
     </div>
-    <img src="./assets/up_arrow.png" alt="up arrow" class="icon up_arrow" onclick="location.href='./#experiencenworks'">
   </section>
+  <footer>
+    <p>
+      Copyright &#169; &nbsp; &nbsp; 2023 &nbsp; &nbsp; Osman Kerem Erdem . &nbsp; &nbsp; All Rights Reserved .
+    </p>
+  </footer>
   <script src="script.js"></script>
 </body>
 

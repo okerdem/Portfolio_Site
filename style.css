@@ -8,6 +8,7 @@
 }
 
 html {
+  scroll-snap-type: y mandatory;
   scroll-behavior: smooth;
 }
 
@@ -16,6 +17,11 @@ body {
   background-attachment: fixed;
   background-size: 100vw auto;
   background-position: center;
+}
+
+section {
+  scroll-snap-align: start;
+  scroll-snap-stop: always;
 }
 
 a {
@@ -37,17 +43,36 @@ a,
 /*NAVIGATOR*/
 
 .navigator {
-  display: flex;
-  justify-content: space-around;
+  position: fixed;
+  top: 35vh;
+}
+
+.theme_image{
+  position: fixed;
+  height: 4rem;
+}
+
+.theme_image:hover{
+  cursor: pointer;
 }
 
 .nav_links {
   display: flex;
-  justify-content: space-around;
-  align-items: center;
-  height: 15vh;
+  flex-direction: column;
   gap: 2rem;
   list-style-type: none;
+  position: fixed;
+  left: -19vh;
+  width: 17vh;
+  z-index: 100;
+  transition: all 500ms ease;
+  background-color: rgb(91, 209, 209);
+  border-radius: 0 15% 15% 0;
+  padding: 3vh;
+}
+
+.nav_links:hover {
+  left: 0;
 }
 
 /*HAMBURGER MENU*/
@@ -94,9 +119,8 @@ a,
   transition: all 0.3 ease-in-out;
 }
 
-.menu_links a:hover {
-  color: gray;
-  transition: all 300ms ease;
+.nav_item{
+  color: white;
 }
 
 .menu_links li {
@@ -205,9 +229,9 @@ section {
   border: white 0.1rem solid;
 }
 
-/*EXPERIENCE & WORKS SECTION */
+/*EXPERIENCE & WORK SECTION */
 
-#experiencenworks {
+#experiencenwork {
   height: 100vh;
   position: relative;
 }
@@ -215,6 +239,7 @@ section {
 .headers_div {
   display: flex;
   margin-top: 4rem;
+  gap: 2.5rem;
 }
 
 .experience_header_text,
@@ -238,7 +263,7 @@ section {
   flex: 1;
 }
 
-.experiencenworks_div {
+.experiencenwork_div {
   display: flex;
   gap: 2.5rem;
   margin-top: -4.5rem;
@@ -255,7 +280,6 @@ section {
 .experience_elements_div {
   display: flex;
   gap: 1rem;
-  flex-wrap: wrap;
 }
 
 .element_div {
@@ -284,8 +308,8 @@ section {
 }
 
 .work_element {
-  width: 35vh;
-  height: 57vh;
+  width: 27vh;
+  height: 47vh;
   border: rgb(186, 186, 186) 0.1rem solid;
   border-radius: 2rem;
   padding: 1.5rem;
@@ -312,30 +336,6 @@ section {
   background-color: rgb(53, 53, 53);
   color: white;
   border: white 0.1rem solid;
-}
-
-.up_arrow,
-.down_arrow {
-  position: absolute;
-  height: 4rem;
-  cursor: pointer;
-  border-radius: 50%;
-}
-
-.up_arrow:hover,
-.down_arrow:hover {
-  background-color: rgb(240, 240, 240);
-  transition: all 300ms ease;
-}
-
-.up_arrow {
-  right: -5rem;
-  top: 3rem;
-}
-
-.down_arrow {
-  right: -5rem;
-  bottom: 0rem;
 }
 
 /*CONTACT SECTION*/
@@ -375,10 +375,10 @@ section {
   background-color: bisque;
 }
 
-.github{
+.github {
   background-color: aquamarine;
 }
 
-.linkedin{
+.linkedin {
   background-color: rgb(222, 187, 255);
 }
